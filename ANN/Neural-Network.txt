@@ -1,0 +1,67 @@
+What are Neural Network?
+
+Neural Network is a type of Machine learning algorithm insperied by structure and  function human Brain.
+
+
+Goal: It's designed to recognize patterns, make predictions, and solve complex problems that are difficult for traditional computer programs, like recognizing an object in a picture or translating a language.
+
+Core Idea: It learns from examples, much like a human does. You don't program it with specific rules; you train it with data
+
+Structure: The Three Layers
+A basic neural network is organized into layers of interconnected processing units called neurons (or nodes).
+
+Input Layer:
+
+This is where the network receives the raw data.
+
+Example: If you're analyzing an image, each pixel's brightness or color value would be a node in the input layer.
+
+Hidden Layer(s):
+
+These are the intermediate layers between the input and output. A network with many hidden layers is called a Deep Neural Network (the basis for "deep learning").
+
+
+They perform all the complex calculations to find patterns and relationships in the data.
+
+Output Layer:
+
+This layer gives the final result or prediction.
+
+Example: In an image classification task, the output layer might have nodes representing "Cat," "Dog," and "Bird," and the one with the highest value is the network's final guess.
+
+
+How a Neural Network Learns (The "Magic")
+The connections between neurons are the key to how a network learns.
+
+Weights and Biases:
+
+Every connection between two neurons has an associated number called a weight. This weight determines the importance of the input from that connection.
+
+A bias is an extra value added to the calculation within a neuron, which makes the network more flexible in learning patterns.
+
+Forward Propagation (The Guess):
+
+The input data travels forward through the network, from the input layer, through the hidden layers, and finally to the output layer.
+
+At each neuron, the inputs are multiplied by their weights, summed up, and then passed through an activation function (a mathematical formula) to decide if the neuron should "fire" or pass data to the next layer.
+
+Loss Function (The Error):
+
+Once the network makes a guess (the output), a loss function calculates the error—how far off the guess was from the actual correct answer.
+
+Backpropagation (The Correction):
+
+This is the core learning process. The error calculated in the previous step is sent backward through the network.
+
+
+Using this error, the network intelligently adjusts all the weights and biases in the connections to reduce the error for the next time.
+
+This cycle of making a guess, calculating the error, and adjusting the weights repeats thousands or millions of times until the network's predictions are highly accurate.
+
+
+Network Type                             Best For                                                           Real-World Application
+
+Feedforward Neural Network (FNN)   ||   Simple classification and regression tasks.                       ||       Predicting a house price based on its features.
+Convolutional Neural Network (CNN) ||  "Data with a grid-like structure (e.g., images).                   ||      "Image recognition, facial recognition, self-driving cars."
+Recurrent Neural Network (RNN),    ||  "Sequential data where context matters (e.g., text, time series)." ||      "Machine translation (e.g., Google Translate), speech recognition."
+Long Short-Term Memory (LSTM),     ||  "A type of RNN, excellent for long sequences."                     ||      Predicting the next word in a sentence (text generation).
